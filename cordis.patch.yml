@@ -1,0 +1,12 @@
+# dsh-bili-notify bundle patch — one insert row over the profile tree.
+# Override any field in profiles/<name>/cordis.patch.yml — later layers win per row.
+- insert:
+    - id: bili-notify
+      name: 'dsh-bili-notify'
+      config:
+        # 可选：B 站 SESSDATA 登录凭证的环境变量名；留空则只启用公开视频评论
+        cookieEnv: BILIBILI_SESSDATA
+        # 单请求超时（毫秒）
+        requestTimeoutMs: 30000
+        # 单次 feed 调用最多返回几条
+        maxFeedRows: 50
