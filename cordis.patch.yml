@@ -6,6 +6,7 @@
       config:
         # 可选：B 站 SESSDATA 登录凭证的环境变量名；留空则只启用公开视频评论
         cookieEnv: BILIBILI_SESSDATA
+        cookieFile: /home/julia/.dsh/credentials/bili-notify.env
         # 单请求超时（毫秒）
         requestTimeoutMs: 30000
         # 单次 feed 调用最多返回几条

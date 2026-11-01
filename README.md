@@ -44,3 +44,11 @@ Passing the whole `a=b; c=d` string works — the client parses out `SESSDATA` a
 | `maxFeedRows` | `50` | Ceiling on rows returned by one feed call |
 
 This plugin only reads. It never uploads, never stores videos, and never touches direct messages.
+
+## 凭据
+
+放在 `~/.dsh/credentials/bili-notify.env`（目录 0700、文件 0600，KEY=VALUE），只此一份。
+本插件用的键：`BILIBILI_SESSDATA`。
+
+插件配置里只写 `credentialFile` 指过去，仓库和 patch 都不留明文。
+老的两行格式与纯文本令牌仍然兼容，配置指向的文件失效时回退到上面这份。
