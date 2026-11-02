@@ -1,6 +1,6 @@
 {
   "name": "dsh-bili-notify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "DeepSeek Harness plugin: read bilibili notifications (@ mentions and replies) and video comments; optionally post a reply.",
   "type": "module",
   "main": "lib/index.js",
